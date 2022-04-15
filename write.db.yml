@@ -1,0 +1,6 @@
+addr: "${LITESTREAM_HOST}:${LITESTREAM_PORT}"
+
+dbs:
+  - path: db/write.db
+    replicas:
+      - path: db/backup

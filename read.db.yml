@@ -1,0 +1,5 @@
+dbs:
+  - path: ${WORKING_DIR}/db/read.db
+    upstream:
+      url: http://${LITESTREAM_HOST}:${LITESTREAM_PORT}
+      path: ${WORKING_DIR}/db/write.db
